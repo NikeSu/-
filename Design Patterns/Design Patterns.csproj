@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7A16E44-4FDC-461E-A5DD-67DC338F8543}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Design_Patterns</RootNamespace>
+    <AssemblyName>Design Patterns</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract Factory Pattern\AbstractFactory.cs" />
+    <Compile Include="Abstract Factory Pattern\AbstractFactoryPatternDemo.cs" />
+    <Compile Include="Abstract Factory Pattern\Blue.cs" />
+    <Compile Include="Abstract Factory Pattern\ColorFactory.cs" />
+    <Compile Include="Abstract Factory Pattern\FactoryProducer.cs" />
+    <Compile Include="Abstract Factory Pattern\Green.cs" />
+    <Compile Include="Abstract Factory Pattern\IColor.cs" />
+    <Compile Include="Abstract Factory Pattern\Red.cs" />
+    <Compile Include="Abstract Factory Pattern\ShapeFactory.cs" />
+    <Compile Include="Factory Pattern\Circle.cs" />
+    <Compile Include="Factory Pattern\FactoryPatternDemo.cs" />
+    <Compile Include="Factory Pattern\IShape .cs" />
+    <Compile Include="Factory Pattern\Rectangle.cs" />
+    <Compile Include="Factory Pattern\ShapeFactory.cs" />
+    <Compile Include="Factory Pattern\Square.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton Pattern\SingleObject.cs" />
+    <Compile Include="Singleton Pattern\SingletonPatternDemo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Abstract Factory Pattern\抽象工厂模式.txt" />
+    <Content Include="Adapter Pattern\适配器模式.txt" />
+    <Content Include="Bridge Pattern\桥接模式.txt" />
+    <Content Include="Builder Pattern\建造者模式.txt" />
+    <Content Include="Business Delegate Pattern\业务代表模式.txt" />
+    <Content Include="Chain of Responsibility Pattern\责任链模式.txt" />
+    <Content Include="Command Pattern\命令模式.txt" />
+    <Content Include="Composite Entity Pattern\组合实体模式.txt" />
+    <Content Include="Composite Pattern\组合模式.txt" />
+    <Content Include="Data Access Object Pattern\数据访问对象模式.txt" />
+    <Content Include="Decorator Pattern\装饰器模式.txt" />
+    <Content Include="Facade Pattern\外观模式.txt" />
+    <Content Include="Factory Pattern\工厂模式.txt" />
+    <Content Include="Filter Pattern or Criteria Pattern\过滤器模式或标准模式.txt" />
+    <Content Include="Flyweight Pattern\享元模式.txt" />
+    <Content Include="Front Controller Pattern\前端控制器模式.txt" />
+    <Content Include="Intercepting Filter Pattern\拦截过滤器模式.txt" />
+    <Content Include="Interpreter Pattern\解释器模式.txt" />
+    <Content Include="Iterator Pattern\迭代器模式.txt" />
+    <Content Include="Mediator Pattern\中介者模式.txt" />
+    <Content Include="Memento Pattern\备忘录模式.txt" />
+    <Content Include="Model-View-Controller\MVC 模式.txt" />
+    <Content Include="Null Object Pattern\空对象模式.txt" />
+    <Content Include="Observer Pattern\观察者模式.txt" />
+    <Content Include="Prototype Pattern\原型模式.txt" />
+    <Content Include="Proxy Pattern\代理模式.txt" />
+    <Content Include="Service Locator Pattern\服务定位器模式.txt" />
+    <Content Include="Singleton Pattern\单例模式.txt" />
+    <Content Include="State Pattern\状态模式.txt" />
+    <Content Include="Strategy Pattern\策略模式.txt" />
+    <Content Include="Template Pattern\模板模式.txt" />
+    <Content Include="Transfer Object Pattern\传输对象模式.txt" />
+    <Content Include="Visitor Pattern\访问者模式.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Abstract Factory Pattern\Abstract Factory Pattern.cd" />
+    <None Include="Factory Pattern\Factory Pattern.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
